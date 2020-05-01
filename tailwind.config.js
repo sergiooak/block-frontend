@@ -9,6 +9,8 @@ module.exports = {
     customForms: theme => ({
       default: {
         'input, select, textarea, radio': {
+          color: theme('colors.gray.900'),
+          fontSize: '18px',
           transition: 'all .3s ease',
           backgroundColor: theme('colors.gray.100'),
           borderWidth: '2px',
@@ -34,6 +36,9 @@ module.exports = {
           '300': '#8998B1',
           '400': '#374867',
         }
+      },
+      fontFamily: {
+        'sans': 'Av, sans-serif',
       }
     }
   },

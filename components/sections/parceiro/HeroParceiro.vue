@@ -1,8 +1,8 @@
 <template lang="html">
-  <section class="bg-block-400">
+  <section>
     <div class="container mx-auto h-64 flex items-center">
-      <div class="w-1/2 mx-auto">
-        <h1 class="font-bold text-center text-2xl text-block-100">
+      <div class="w-5/12 mx-auto">
+        <h1 class="text-center text-2xl text-white font-av">
           Seja um revendedor de produtos Block em sua região!
         </h1>
       </div>
@@ -20,6 +20,11 @@ export default {
     height: 430px;
     margin-top: -75px;
     padding-top: calc(75px + 10px);
+  }
+
+  h1{
+    font-size: 32px;
+    letter-spacing: 0.03em;
   }
 
   .icones img{

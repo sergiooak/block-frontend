@@ -32,7 +32,7 @@
           </ul>
         </div>
         <div id="trabalheConosco">
-          <nuxt-link to="/seja-parceiro" class="btn btn-white">
+          <nuxt-link to="/seja-parceiro" class="btn btn-white transition duration-150 ease transform hover:scale-105">
             <img src="icons/trabalhe-conosco.svg" class="block" style="height: 28px;">
             <span class="ml-4">Trabalhe Conosco</span>
           </nuxt-link>

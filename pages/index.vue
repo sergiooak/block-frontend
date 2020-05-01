@@ -1,5 +1,5 @@
 <template>
-  <main class="min-h-screen bg-gray-200">
+  <main>
     <Hero />
     <Videos />
     <Qualidades />

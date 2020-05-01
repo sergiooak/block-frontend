@@ -1,15 +1,16 @@
 <template lang="html">
-  <section class="pt-12">
+  <section id="orcamento" class="pt-12">
     <div class="container flex flex-col mx-auto">
-      <h2 class="text-2xl text-center text-block-400 uppercase">Solicite seu orçamento</h2>
-      <p class="text-lg  text-center text-block-300 mb-12 w-4/6 mx-auto">Preencha o formulário abaixo com seus dados e faça a simulação de seu pedido, um de nossos representantes entrará em contato após a conclusão.</p>
+      <h2 class="titulo text-2xl text-center text-block-400 uppercase -mt-2 mb-4">Solicite seu orçamento</h2>
+      <p class="subtitulo text-lg  text-center text-block-300 mb-12 w-4/6 mx-auto font-av">Preencha o formulário abaixo com seus dados e faça a simulação de seu pedido, um de nossos representantes entrará em contato após a conclusão.</p>
       <div class="w-4/6 mx-auto">
         <div class="bg-white shadow-xl p-4 rounded-lg">
-          <header class="border-b-2 border-block-200 -mx-4 px-4 pb-4">
+          <header class="border-b-2 border-block-200 -mx-4 px-4 pb-4 text-block-400 font-al"
+          style="font-size: 22px; margin-top: -8px;">
             Dados
           </header>
           <main>
-            <form class="pt-2">
+            <form>
               <div class="flex justify-between">
                 <label class="mt-4 block flex-1">
                   <span class="text-gray-700">Nome:</span>
@@ -35,7 +36,7 @@
                   <span class="text-gray-700">Tipo de Pessoa:</span>
                   <select v-model="form.dados.pessoa" class="form-select mt-1 block w-full">
                     <option value="fisica">Física</option>
-                    <option value="juridica">Juridica</option>
+                    <option value="juridica">Jurídica</option>
                   </select>
                 </label>
               </div>
@@ -43,21 +44,23 @@
           </main>
         </div>
         <div class="bg-white shadow-xl p-4 rounded-lg mt-8">
-          <header class="border-b-2 border-block-200 -mx-4 px-4 pb-4">
+          <header class="border-b-2 border-block-200 -mx-4 px-4 pb-4 text-block-400 font-al"
+          style="font-size: 22px; margin-top: -8px;">
             Pedido
           </header>
           <main>
-            <form class="pt-2">
+            <form>
               Em breve
             </form>
           </main>
         </div>
         <div class="bg-white shadow-xl p-4 rounded-lg mt-8">
-          <header class="border-b-2 border-block-200 -mx-4 px-4 pb-4">
+          <header class="border-b-2 border-block-200 -mx-4 px-4 pb-4 text-block-400 font-al"
+          style="font-size: 22px; margin-top: -8px;">
             Entrega
           </header>
           <main>
-            <form class="pt-2">
+            <form>
               <div class="flex justify-between">
                 <label class="mt-4 block flex-1 mr-4">
                   <span class="text-gray-700">CEP:</span>
@@ -183,5 +186,10 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style lang="css">
+  label span{
+    font-family: 'al';
+    font-size: 20px;
+    @apply text-block-400;
+  }
 </style>

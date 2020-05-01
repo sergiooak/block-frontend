@@ -1,7 +1,10 @@
 <template>
-  <div id="main">
+  <div id="main" class="bg-gray-200">
     <Header />
-    <nuxt />
+    <div class="bg-block-400 hero"></div>
+    <transition name="fade">
+      <nuxt class="relative z-10" />
+    </transition>
     <Footer />
   </div>
 </template>
@@ -19,8 +22,91 @@ export default {
 </script>
 
 <style>
+  .hero{
+    height: 430px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  #main{
+    overflow-x: hidden;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body{
+    font-family: sans-serif;
+  }
+
+  @font-face {
+    font-family: 'av';
+    src: url('../assets/fonts/av.woff2') format('woff2'),
+        url('../assets/fonts/av.woff') format('woff');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'al';
+    src: url('../assets/fonts/al.woff2') format('woff2'),
+        url('../assets/fonts/al.woff') format('woff');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+    opacity: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6{
+    font-family: 'al', sans-serif;
+    line-height: 1.2em;
+  }
+
+  p{
+    font-family: 'av', sans-serif;
+    line-height: 1.1em;
+  }
+
+  p small{
+    margin-top: -2px;
+  }
+
+  .titulo{
+    font-size: 42px;
+  }
+
+  .subtitulo{
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .font-av{
+    font-family: 'av', sans-serif;
+  }
+
+  .font-al{
+    font-family: 'al', sans-serif;
+  }
+
   .btn{
-    @apply flex items-center h-10 box-border px-4 rounded;
+    letter-spacing: 0.03em;
+    padding-bottom: 4px;
+    font-size: 18px;
+    @apply flex items-center h-10 box-content px-6 rounded font-al uppercase;
+  }
+
+  .btn img{
+    margin-bottom: -4px;
   }
 
   .btn-white{
@@ -28,7 +114,8 @@ export default {
   }
 
   .btn-outline{
-    @apply h-8 box-content bg-block-400 border-2 border-white shadow text-white;
+    padding-bottom: 6px;
+    @apply h-8 bg-block-400 border-2 border-white shadow text-white;
   }
 
   .btn-primary{

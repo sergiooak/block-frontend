@@ -3,7 +3,8 @@
     <div class="container mx-auto">
       <div class="w-4/6 mx-auto bg-white shadow-xl p-4 rounded-lg">
         <form class="">
-          <header class="border-b-2 border-block-200 -mx-4 px-4 pb-4">
+          <header class="border-b-2 border-block-200 -mx-4 px-4 pb-4 text-block-400 font-al"
+          style="font-size: 22px; margin-top: -8px;">
             Preencha o Formulário
           </header>
           <main>
