@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-transparent relative" style="z-index: +1">
+  <header>
     <div class="container mx-auto h-full flex items-center justify-between border-b-2 border-block-300">
       <div id="logoArea">
         <nuxt-link to="/">

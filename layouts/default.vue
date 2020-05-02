@@ -24,10 +24,7 @@ export default {
 <style>
   .hero{
     height: 430px;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
+    margin-bottom: -430px
   }
 
   #main{

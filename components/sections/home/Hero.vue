@@ -55,9 +55,7 @@ export default {
 
 <style lang="css" scoped>
   section{
-    height: 430px;
-    margin-top: -75px;
-    padding-top: calc(75px + 10px);
+    height: 355px;
   }
 
   .icones svg{
