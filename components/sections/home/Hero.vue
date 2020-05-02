@@ -6,9 +6,10 @@
           Produtos de alta qualidade, seguindo critérios técnicos e boas práticas de fabricação e montagem em todo o seu processo de produção.
         </h1>
         <footer class="flex items-center justify-center mt-8">
-          <a href="#" class="btn btn-outline uppercase mr-4 transition duration-150 ease transform hover:scale-105">
+          <div class="btn btn-outline uppercase mr-4 transition duration-150 ease transform hover:scale-105"
+              @click="abreTelefones()">
             Fale conosco
-          </a>
+          </div>
           <a href="#orcamento" class="btn btn-white uppercase transition duration-150 ease transform hover:scale-105">
             Solicite seu orçamento
           </a>
@@ -43,6 +44,12 @@
 
 <script>
 export default {
+  methods: {
+    abreTelefones: function () {
+      console.log('1');
+      this.$emit('abreTelefones');
+    }
+  }
 }
 </script>
 

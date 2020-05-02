@@ -2,7 +2,8 @@
   <section class="-mt-20 mb-16">
     <div class="container mx-auto">
       <div class="flex justify-between">
-        <div class="mr-4 cursor-pointer transition duration-150 ease transform hover:-translate-y-2">
+        <div class="mr-4 cursor-pointer transition duration-150 ease transform hover:-translate-y-2"
+              @click="abreVideo()">
           <div  class="w-full border-4 border-white rounded shadow-lg"
                 style="min-height: 163.8px; width: 308px; background: #fff;">
             <img  src="https://via.placeholder.com/924x480"
@@ -11,7 +12,8 @@
           <h3 class="text-center text-block-400 mt-2 uppercase animated fadeInDown"
               style="animation-delay: .5s">Vídeo 3</h3>
         </div>
-        <div class="mr-4 cursor-pointer transition duration-150 ease transform hover:-translate-y-2">
+        <div class="mr-4 cursor-pointer transition duration-150 ease transform hover:-translate-y-2"
+              @click="abreVideo()">
           <div  class="w-full border-4 border-white rounded shadow-lg"
                 style="min-height: 163.8px; width: 308px; background: #fff;">
             <img  src="https://via.placeholder.com/924x480"
@@ -20,7 +22,8 @@
           <h3 class="text-center text-block-400 mt-2 uppercase animated fadeInDown"
               style="animation-delay: .5s">Vídeo 3</h3>
         </div>
-        <div class="mr-4 cursor-pointer transition duration-150 ease transform hover:-translate-y-2">
+        <div class="mr-4 cursor-pointer transition duration-150 ease transform hover:-translate-y-2"
+              @click="abreVideo()">
           <div  class="w-full border-4 border-white rounded shadow-lg"
                 style="min-height: 163.8px; width: 308px; background: #fff;">
             <img  src="https://via.placeholder.com/924x480"
@@ -29,7 +32,8 @@
           <h3 class="text-center text-block-400 mt-2 uppercase animated fadeInDown"
               style="animation-delay: .5s">Vídeo 3</h3>
         </div>
-        <div class="cursor-pointer transition duration-150 ease transform hover:-translate-y-2">
+        <div class="cursor-pointer transition duration-150 ease transform hover:-translate-y-2"
+              @click="abreVideo()">
           <div  class="w-full border-4 border-white rounded shadow-lg"
                 style="min-height: 163.8px; width: 308px; background: #fff;">
             <img  src="https://via.placeholder.com/924x480"
@@ -60,7 +64,11 @@ export default {
         item.classList.add("animated", "fadeIn");
       };
     });
-
+  },
+  methods: {
+    abreVideo: function () {
+      this.$emit('abreVideo');
+    }
   }
 }
 </script>

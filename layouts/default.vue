@@ -1,7 +1,7 @@
 <template>
   <div id="main" class="bg-gray-200">
-    <Header />
     <div class="bg-block-400 hero"></div>
+    <Header />
     <transition name="fade">
       <nuxt class="relative z-10" />
     </transition>
@@ -102,7 +102,7 @@ export default {
     letter-spacing: 0.03em;
     padding-bottom: 4px;
     font-size: 18px;
-    @apply flex items-center h-10 box-content px-6 rounded font-al uppercase;
+    @apply cursor-pointer flex items-center h-10 box-content px-6 rounded font-al uppercase;
   }
 
   .btn img{
