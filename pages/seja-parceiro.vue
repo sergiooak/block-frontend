@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import HeroParceiro from '~/components/sections/parceiro/HeroParceiro.vue'
-import FormParceiro from '~/components/sections/parceiro/FormParceiro.vue'
+import HeroParceiro from '~/components/parceiro/HeroParceiro.vue'
+import FormParceiro from '~/components/parceiro/FormParceiro.vue'
 
 export default {
   components: {

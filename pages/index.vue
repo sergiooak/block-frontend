@@ -17,14 +17,14 @@
 </template>
 
 <script>
-import Hero from '~/components/sections/home/Hero.vue'
-import Videos from '~/components/sections/home/Videos.vue'
-import Qualidades from '~/components/sections/home/Qualidades.vue'
-import Form from '~/components/sections/home/Form.vue'
-import Faq from '~/components/sections/home/Faq.vue'
+import Hero from '~/components/home/Hero.vue'
+import Videos from '~/components/home/Videos.vue'
+import Qualidades from '~/components/home/Qualidades.vue'
+import Form from '~/components/home/Form.vue'
+import Faq from '~/components/home/Faq.vue'
 
-import Informacao from '~/components/sections/home/overlay/Informacao.vue'
-import Telefones from '~/components/sections/home/overlay/Telefones.vue'
+import Informacao from '~/components/home/overlay/Informacao.vue'
+import Telefones from '~/components/home/overlay/Telefones.vue'
 
 export default {
   components: {
