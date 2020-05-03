@@ -64,7 +64,7 @@
           <form class="flex">
             <label class="-mt-2 block flex-1 mr-12">
               <span class="text-gray-700">Quantidade:</span>
-              <input type="number" v-model="pedido.capote.qtd" class="form-input mt-1 block w-full">
+              <ticker v-model="pedido.capote.qtd" />
             </label>
             <label class="-mt-2 block flex-1 mr-4">
               <span class="text-gray-700">Prazo:</span>
@@ -100,11 +100,14 @@ import svgViseira from '~/components/svg/svgViseira.vue'
 import svgMascara from '~/components/svg/svgMascara.vue'
 import svgCapote from '~/components/svg/svgCapote.vue'
 
+import ticker from '~/components/home/Form/ticker.vue'
+
 export default {
   components: {
     svgViseira,
     svgMascara,
-    svgCapote
+    svgCapote,
+    ticker
   },
   data: function () {
     return {
