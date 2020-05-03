@@ -1,7 +1,7 @@
 <template lang="html">
-  <div class="bg-white shadow-xl p-4 rounded-lg">
-    <header class="border-b-2 border-block-200 -mx-4 px-4 pb-4 text-block-400 font-al"
-    style="font-size: 22px; margin-top: -8px;">
+  <div class="bg-white shadow-xl p-8 rounded-lg">
+    <header class="border-b-2 border-block-200 -mx-8 -mt-6 px-8 pb-4 text-block-400 font-al"
+    style="font-size: 22px;">
       Entrega
     </header>
     <main>
