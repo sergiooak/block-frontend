@@ -1,5 +1,5 @@
 <template lang="html">
-  <section id="orcamento" class="pt-12">
+  <section id="orcamento" class="pt-10 md:pt-12">
     <div class="container flex flex-col mx-auto">
       <h2 class="titulo text-2xl text-center text-block-400 uppercase -mt-2 mb-4">Solicite seu orçamento</h2>
       <p class="subtitulo text-center text-block-300 mb-12 w-10/12 md:w-4/6 mx-auto font-av">Preencha o formulário abaixo com seus dados e faça a simulação de seu pedido, um de nossos representantes entrará em contato após a conclusão.</p>

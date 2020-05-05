@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="-mt-16 md:mt-0">
     <div class="container mx-auto flex flex-col items-center justify-center mt-8">
       <ul class="flex flex-wrap w-10/12">
         <li class="flex w-full mb-4 md:w-1/2 animated fadeIn" style="animation-delay: .7s">
@@ -40,7 +40,7 @@
           </div>
         </li>
       </ul>
-      <hr class="border-t-2 w-full border-block-200 mt-16"/>
+      <hr class="border-t-2 w-full border-block-200 mt-10 md:mt-16"/>
     </div>
   </section>
 </template>
