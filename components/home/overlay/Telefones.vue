@@ -1,9 +1,9 @@
 <template lang="html">
   <div class="overlay" @click.self="fechaTelefones()">
     <div class="container -ml-4 animated fadeIn" style="animation-delay: .3s;">
-      <div class="w-1/3 -mt-8 mx-auto bg-gray-200 border-4 border-white rounded-lg shadow-2xl p-4 relative">
-        <div class="btn-fecha absolute" @click="fechaTelefones()">
-          <svg fill="currentColor" viewBox="0 0 20 20"><path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
+      <div class="w-10/12 md:w-1/3 -mt-8 mx-auto bg-gray-200 border-4 border-white rounded-lg shadow-2xl p-4 relative">
+        <div class="btn-fecha absolute text-white" @click="fechaTelefones()">
+          <svg class="w-20 h-20" fill="currentColor" viewBox="0 0 20 20"><path d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" fill-rule="evenodd"></path></svg>
         </div>
         <main class="animated fadeIn" style="animation-delay: .9s;">
           <h1 class="text-block-400 text-center text-2xl" style="line-height: .8em;">Entre em contato conosco através de um dos telefones abaixo</h1>
