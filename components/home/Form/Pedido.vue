@@ -5,12 +5,12 @@
       Pedido
     </header>
     <main>
-      <div class="my-4 border-b-2 border-block-100 -mx-8 px-8 pb-8">
-        <div class="icones flex flex-col items-center">
+      <div class="flex flex-col md:flex-row my-4 border-b-2 border-block-100 -mx-8 px-8 pb-8 md:pb-2">
+        <div class="icones flex flex-col items-center md:mt-4">
           <svgViseira />
           <h2>Viseira</h2>
         </div>
-        <div>
+        <div class="flex flex-col md:flex-row items-center md:ml-8">
           <div class="">
             <div class="flex flex-col mb-4">
               <span class="font-al text-block-400" style="font-size: 20px;">Modelo:</span>
@@ -24,7 +24,7 @@
                   <span class="ml-2">Personalizada</span>
                 </label>
               </div>
-              <label class="block flex-1 mt-4 md:-mt-2">
+              <label class="block flex-1 mt-4 md:mt-2">
                 <span class="text-gray-700">Quantidade:</span>
                 <div class="flex items-center box-content mt-1">
                   <div @click="pedido.viseira.qtd--" class="cursor-pointer bg-block-400 px-2 rounded-l text-block-100 flex items-center justify-center h-12">
@@ -36,7 +36,7 @@
                   </div>
                 </div>
               </label>
-          </div>
+            </div>
           </div>
           <div class="flex w-full mt-4 md:mt-0 flex-col md:flex-row md:ml-12">
             <label class="md:-mt-2 block flex-1 md:mr-4">
@@ -50,12 +50,12 @@
           </div>
         </div>
       </div>
-      <div class="my-4 border-b-2 border-block-100 -mx-8 px-8 pb-8">
-        <div class="icones flex flex-col items-center">
+      <div class="flex flex-col md:flex-row my-4 border-b-2 border-block-100 -mx-8 px-8 pb-8 md:pb-2">
+        <div class="icones flex flex-col items-center md:mt-4">
           <svgMascara />
           <h2>Máscara</h2>
         </div>
-        <div>
+        <div class="flex flex-col md:flex-row items-center md:ml-8">
           <div class="">
             <div class="flex flex-col mb-4">
               <label class="block flex-1 mt-4 md:-mt-2">
@@ -84,12 +84,12 @@
           </div>
         </div>
       </div>
-      <div class="my-4 -mx-8 px-8 pb-8">
-        <div class="icones flex flex-col items-center">
+      <div class="flex flex-col md:flex-row my-4 -mx-8 px-8 pb-8 md:pb-2 md:-mb-2">
+        <div class="icones flex flex-col items-center md:mt-4">
           <svgCapote />
           <h2>Capote</h2>
         </div>
-        <div>
+        <div class="flex flex-col md:flex-row items-center md:ml-8">
           <div class="">
             <div class="flex flex-col mb-4">
               <label class="block flex-1 mt-4 md:-mt-2">
