@@ -6,8 +6,8 @@
     </header>
     <main>
       <form>
-        <div class="flex justify-between">
-          <label class="mt-4 block flex-1 mr-4">
+        <div class="flex flex-col md:flex-row md:justify-between">
+          <label class="mt-4 block flex-1 md:mr-4">
             <span class="text-gray-700">CEP:</span>
             <input v-model="endereco.cep" v-mask="'#####-###'" type="text" inputmode="numeric" class="form-input mt-1 block w-full">
           </label>
@@ -22,8 +22,8 @@
             <input v-model="endereco.endereco" class="form-input mt-1 block w-full">
           </label>
         </div>
-        <div class="flex justify-between">
-          <label class="mt-4 block flex-1 mr-4">
+        <div class="flex flex-col md:flex-row md:justify-between">
+          <label class="mt-4 block flex-1 md:mr-4">
             <span class="text-gray-700">Bairro:</span>
             <input v-model="endereco.bairro" class="form-input mt-1 block w-full">
           </label>

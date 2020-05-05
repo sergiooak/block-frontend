@@ -6,41 +6,50 @@
               @click="abreVideo()">
           <div  class="w-full border-4 border-white rounded shadow-lg"
                 style="min-height: 163.8px; width: 308px; background: #fff;">
-            <img  src="https://via.placeholder.com/924x480"
+            <img  src="https://via.placeholder.com/924x480&text=video%20rodando"
                   class="imageList hidden">
           </div>
-          <h3 class="text-center text-block-400 mt-2 uppercase animated fadeInDown"
-              style="animation-delay: .5s">Vídeo 3</h3>
+          <h3 class="flex flex-col text-center text-block-400 mt-2 uppercase animated fadeInDown"
+              style="animation-delay: .5s">Viseiras Personalizadas,
+            <small class="text-block-300">
+              com a marca do cliente
+            </small>
+          </h3>
         </div>
         <div class="mr-4 cursor-pointer transition duration-150 ease transform hover:-translate-y-2"
               @click="abreVideo()">
           <div  class="w-full border-4 border-white rounded shadow-lg"
                 style="min-height: 163.8px; width: 308px; background: #fff;">
-            <img  src="https://via.placeholder.com/924x480"
+            <img  src="https://via.placeholder.com/924x480&text=video%20com%20logo"
                   class="imageList hidden">
           </div>
           <h3 class="text-center text-block-400 mt-2 uppercase animated fadeInDown"
-              style="animation-delay: .5s">Vídeo 3</h3>
+              style="animation-delay: .5s">Linha Block Personalizada </h3>
         </div>
         <div class="mr-4 cursor-pointer transition duration-150 ease transform hover:-translate-y-2"
               @click="abreVideo()">
           <div  class="w-full border-4 border-white rounded shadow-lg"
                 style="min-height: 163.8px; width: 308px; background: #fff;">
-            <img  src="https://via.placeholder.com/924x480"
+            <img  src="fotos/imagem_1_thumb.png"
                   class="imageList hidden">
           </div>
-          <h3 class="text-center text-block-400 mt-2 uppercase animated fadeInDown"
-              style="animation-delay: .5s">Vídeo 3</h3>
+          <h3 class="flex flex-col text-center text-block-400 mt-2 uppercase animated fadeInDown"
+              style="animation-delay: .5s">Viseira com 99,9% de translucides.
+            <small class="text-block-300">
+              elástico ajustável
+            </small>
+          </h3>
         </div>
         <div class="cursor-pointer transition duration-150 ease transform hover:-translate-y-2"
               @click="abreVideo()">
           <div  class="w-full border-4 border-white rounded shadow-lg"
                 style="min-height: 163.8px; width: 308px; background: #fff;">
-            <img  src="https://via.placeholder.com/924x480"
+            <img  src="fotos/imagem_2_thumb.png"
                   class="imageList hidden">
           </div>
-          <h3 class="text-center text-block-400 mt-2 uppercase animated fadeInDown"
-              style="animation-delay: .5s">Vídeo 3</h3>
+          <h3 class="flex flex-col text-center text-block-400 mt-2 uppercase animated fadeInDown"
+              style="animation-delay: .5s">Avanço adaptado para quem usa óculos
+          </h3>
         </div>
       </div>
     </div>

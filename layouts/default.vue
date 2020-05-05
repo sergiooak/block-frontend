@@ -23,8 +23,15 @@ export default {
 
 <style>
   .hero{
-    height: 430px;
-    margin-bottom: -430px
+    height: 460px;
+    margin-bottom: -460px
+  }
+
+  @media (min-width: 768px) {
+    .hero{
+      height: 430px;
+      margin-bottom: -430px
+    }
   }
 
   #main{
@@ -78,13 +85,15 @@ export default {
     margin-top: -2px;
   }
 
-  .titulo{
-    font-size: 42px;
-  }
+  @media (min-width: 768px) {
+    .titulo{
+      font-size: 42px;
+    }
 
-  .subtitulo{
-    font-size: 20px;
-    line-height: 22px;
+    .subtitulo{
+      font-size: 20px;
+      line-height: 22px;
+    }
   }
 
   .font-av{

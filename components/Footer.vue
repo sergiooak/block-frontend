@@ -22,6 +22,14 @@
           <li class="w-6 h-6 flex ite justify-center bg-block-200">I</li>
         </ul>
       </div>
+      <div class="flex flex-col justify-center mb-4">
+        <span class="text-block-200 text-center">
+          Rua Genarino Casabona 4264 - Luizote de Freitas - Uberlândia MG - CEP 38404-294
+        </span>
+        <span class="text-block-200 text-center">
+          Telefone Fixo: (34) 3293-8655
+        </span>
+      </div>
       <div class="flex justify-center">
         <span class="text-block-200 text-center">
           © {{ new Date().getFullYear() }} - Block Máscaras Hospitalares - Todos os direitos reservados

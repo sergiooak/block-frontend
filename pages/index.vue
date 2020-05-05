@@ -1,10 +1,9 @@
 <template>
   <main>
     <Hero v-on:abreTelefones="mostraTelefones = true" />
-    <Videos v-on:abreVideo="mostraInformacao = true" />
+    <Videos v-on:abreVideo="mostraInformacao = true" class="hidden"/>
     <Qualidades />
     <Form />
-    <Faq />
 
     <!-- Overlays -->
     <transition name="fade">
@@ -21,7 +20,6 @@ import Hero from '~/components/home/Hero.vue'
 import Videos from '~/components/home/Videos.vue'
 import Qualidades from '~/components/home/Qualidades.vue'
 import Form from '~/components/home/Form.vue'
-import Faq from '~/components/home/Faq.vue'
 
 import Informacao from '~/components/home/overlay/Informacao.vue'
 import Telefones from '~/components/home/overlay/Telefones.vue'
@@ -32,7 +30,6 @@ export default {
     Videos,
     Qualidades,
     Form,
-    Faq,
     Informacao,
     Telefones
   },

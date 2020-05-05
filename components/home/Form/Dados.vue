@@ -12,18 +12,18 @@
             <input v-model="dados.nome" class="form-input mt-1 block w-full">
           </label>
         </div>
-        <div class="flex justify-between">
-          <label class="mt-4 block flex-1 mr-4">
+        <div class="flex flex-col md:flex-row md:justify-between">
+          <label class="mt-4 block flex-1 md:mr-4">
             <span class="text-gray-700">Telefone Fixo:</span>
             <input v-model="dados.telefone" v-mask="'(##) ####-####'" class="form-input mt-1 block w-full" placeholder="Opcional">
           </label>
           <label class="mt-4 block flex-1">
             <span class="text-gray-700">Celular:</span>
-            <input v-model="dados.celular" v-mask="'(##) #####-####'" class="form-input mt-1 block w-full">
+            <input v-model="dados.celular" v-mask="'(##) #####-####'" class="form-input mt-1 block w-full" placeholder="(00) 00000-0000">
           </label>
         </div>
-        <div class="flex justify-between">
-          <label class="mt-4 block flex-1 mr-4">
+        <div class="flex flex-col md:flex-row md:justify-between">
+          <label class="mt-4 block flex-1 md:mr-4">
             <span class="text-gray-700">E-mail:</span>
             <input v-model="dados.email" class="form-input mt-1 block w-full">
           </label>
