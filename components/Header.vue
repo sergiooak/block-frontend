@@ -2,30 +2,26 @@
   <header>
     <div class="container mx-auto h-full flex items-center justify-center md:justify-between md:border-b-2 border-block-300">
       <div id="logoArea">
-        <nuxt-link to="/">
+        <nuxt-link to="/" class="flex">
           <img src="logo-invertida.svg" alt="Block Mascáras Hospitalares" class="h-12">
+          <img src="badge.svg" alt="Produto de qualidade certificada" class="h-12 ml-4 animated fadeInLeft">
         </nuxt-link>
       </div>
       <nav class="hidden md:flex">
         <div id="iconesSociais" class="flex items-center">
-          <ul class="flex h-6">
+          <ul class="flex h-6 animated fadeInRight">
             <li class="mr-4">
-              <a href="#" >
+              <a href="https://wa.me/5561998682121" target="_blank">
                 <img class="h-6" src="icons/social/whatsapp.svg" alt="WhatsApp">
               </a>
             </li>
             <li class="mr-4">
-              <a href="#">
-                <img class="h-6" src="icons/social/facebook.svg" alt="Facebook">
-              </a>
-            </li>
-            <li class="mr-4">
-              <a href="#">
+              <a href="https://www.instagram.com/blockmascarahospitalar/" target="_blank">
                 <img class="h-6" src="icons/social/instagram.svg" alt="Instagram">
               </a>
             </li>
-            <li class="mr-16">
-              <a href="#">
+            <li class="mr-8">
+              <a href="mailto:ddd.franco@gmail.com" target="_blank">
                 <img class="h-6" src="icons/social/gmail.svg" alt="E-mail">
               </a>
             </li>

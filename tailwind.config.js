@@ -21,9 +21,16 @@ module.exports = {
             boxShadow: '0 0 0 3px rgba(55, 72, 103, 0.5)',
             borderColor: theme('colors.block.400'),
             zIndex: '+1'
+          }
+        },
+        radio:{
+          '&:focus': {
+            boxShadow: 'none',
+            borderColor: theme('colors.block.400'),
+            zIndex: '+1'
           },
           '&:checked': {
-            backgroundColor: theme('colors.block.300'),
+            backgroundColor: theme('colors.block.400'),
           },
         }
       },
