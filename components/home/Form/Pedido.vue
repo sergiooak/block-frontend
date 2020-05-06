@@ -137,14 +137,11 @@ import svgViseira from '~/components/svg/svgViseira.vue'
 import svgMascara from '~/components/svg/svgMascara.vue'
 import svgCapote from '~/components/svg/svgCapote.vue'
 
-import ticker from '~/components/home/Form/ticker.vue'
-
 export default {
   components: {
     svgViseira,
     svgMascara,
-    svgCapote,
-    ticker
+    svgCapote
   },
   data: function () {
     return {
