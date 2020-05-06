@@ -1,6 +1,6 @@
 <template lang="html">
-  <section>
-    <div class="container mx-auto h-64 mt-24 md:mt-10 flex flex-col-reverse md:flex-row md:items-center">
+  <section class="flex items-stretch">
+    <div class="container mx-auto -mt-4 md:mt-0 flex flex-col-reverse justify-center items-center md:flex-row">
       <div class="md:w-1/2">
         <h1 class="mt-4 md:mt-0 text-center mx-auto text-lg text-block-100 font-av" style="max-width: 444px;">
           Produtos de alta qualidade, seguindo critérios técnicos e boas práticas de fabricação e montagem em todo o seu processo de produção.
@@ -54,9 +54,14 @@ export default {
 </script>
 
 <style lang="css" scoped>
-
   section{
-    min-height: 355px;
+    min-height: calc(460px - 75px);
+  }
+
+  @media (min-width: 768px) {
+    section{
+      min-height: calc(430px - 75px);
+    }
   }
 
   .icones svg{

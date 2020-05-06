@@ -15,7 +15,7 @@
           </div>
           <div class="ml-4">
             <h6 class="text-xl text-yellow-900 font-bold uppercase mb-4">Atenção</h6>
-            <p class="text-yellow-800">Você precisa preencher pelo menos um telefone de contato, para poder enviar a solicitação.</p>
+            <p class="text-yellow-800">Você precisa preencher pelo menos um telefone de contato, para enviar a solicitação.</p>
           </div>
         </div>
         <div class="md:w-2/6 mt-8 md:mt-0 flex md:justify-end">
