@@ -5,20 +5,36 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Block Máscara Hospitalar',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Produtos de alta qualidade, seguindo critérios técnicos e boas práticas de fabricação e montagem em todo o seu processo de produção.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/icon.png' }
     ]
   },
   /*
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
+  pwa: {
+    meta: {
+      theme_color: '#082B4D',
+      lang: 'pt-BR'
+    },
+    icon: {
+      purpose: 'maskable'
+    },
+    manifest: {
+      name: 'Block Máscara Hospitalar',
+      short_name: 'Block',
+      lang: 'pt-BR',
+      background_color: '#F7FAFC',
+      theme_color: '#082B4D',
+    }
+  },
   /*
   ** Global CSS
   */
@@ -58,10 +74,18 @@ export default {
   ** Build configuration
   */
   build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend (config, ctx) {
+    extractCSS: true,
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.(css|vue)$/,
+            chunks: 'all',
+            enforce: true
+          }
+        }
+      }
     }
   }
 }
