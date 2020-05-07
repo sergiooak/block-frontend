@@ -1,13 +1,14 @@
 <template>
   <main>
     <Hero v-on:abreTelefones="mostraTelefones = true" />
-    <Videos v-on:abreVideo="mostraInformacao = true"/>
+    <Videos v-on:abreVideo="abreVideo"/>
     <Qualidades />
     <Form />
 
     <!-- Overlays -->
     <transition name="fade">
-      <Informacao v-if="mostraInformacao" v-on:fechaOverlay="mostraInformacao = false" />
+      <Informacao v-if="mostraInformacao" v-on:fechaOverlay="mostraInformacao = false"
+        :infoId="infoId" />
     </transition>
     <transition name="fade">
       <Telefones v-if="mostraTelefones" v-on:fechaTelefones="mostraTelefones = false" />
@@ -36,11 +37,15 @@ export default {
   data(){
     return{
       mostraInformacao: false,
+      infoId: 1,
       mostraTelefones: false,
     }
   },
   methods: {
-
+    abreVideo: function (x) {
+      this.mostraInformacao = true
+      this.infoId = x
+    }
   }
 }
 </script>
