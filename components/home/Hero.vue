@@ -1,6 +1,6 @@
 <template lang="html">
   <section class="flex items-stretch">
-    <div class="container mx-auto -mt-4 md:mt-0 flex flex-col-reverse justify-center items-center md:flex-row">
+    <div class="container mx-auto -mt-4 md:pb-16 flex flex-col-reverse justify-center items-center md:flex-row">
       <div class="md:w-1/2">
         <h1 class="mt-4 md:mt-0 text-center mx-auto text-lg text-block-100 font-av" style="max-width: 444px;">
           Produtos de alta qualidade, seguindo critérios técnicos e boas práticas de fabricação e montagem em todo o seu processo de produção.

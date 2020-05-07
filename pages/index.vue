@@ -1,7 +1,7 @@
 <template>
   <main>
     <Hero v-on:abreTelefones="mostraTelefones = true" />
-    <Videos v-on:abreVideo="mostraInformacao = true" class="hidden"/>
+    <Videos v-on:abreVideo="mostraInformacao = true"/>
     <Qualidades />
     <Form />
 

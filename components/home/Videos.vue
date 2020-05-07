@@ -1,8 +1,8 @@
 <template lang="html">
-  <section class="-mt-20 mb-16">
-    <div class="container mx-auto">
-      <div class="flex justify-between">
-        <div class="mr-4 cursor-pointer transition duration-150 ease transform hover:-translate-y-2"
+  <section class="mt-8 md:-mt-20 md:mb-8">
+    <div class="container md:mx-auto w-full">
+      <div class="flex justify-between overflow-x-scroll md:overflow-x-hidden scrollArea">
+        <div class="item ml-4 md:ml-0 mr-4 cursor-pointer"
               @click="abreVideo()">
           <div  class="w-full border-4 border-white rounded shadow-lg"
                 style="min-height: 163.8px; width: 308px; background: #fff;">
@@ -16,7 +16,7 @@
             </small>
           </h3>
         </div>
-        <div class="mr-4 cursor-pointer transition duration-150 ease transform hover:-translate-y-2"
+        <div class="item mr-4 cursor-pointer"
               @click="abreVideo()">
           <div  class="w-full border-4 border-white rounded shadow-lg"
                 style="min-height: 163.8px; width: 308px; background: #fff;">
@@ -26,7 +26,7 @@
           <h3 class="text-center text-block-400 mt-2 uppercase animated fadeInDown"
               style="animation-delay: .5s">Linha Block Personalizada </h3>
         </div>
-        <div class="mr-4 cursor-pointer transition duration-150 ease transform hover:-translate-y-2"
+        <div class="item mr-4 cursor-pointer"
               @click="abreVideo()">
           <div  class="w-full border-4 border-white rounded shadow-lg"
                 style="min-height: 163.8px; width: 308px; background: #fff;">
@@ -40,7 +40,7 @@
             </small>
           </h3>
         </div>
-        <div class="cursor-pointer transition duration-150 ease transform hover:-translate-y-2"
+        <div class="item pr-4 md:pr-0 cursor-pointer"
               @click="abreVideo()">
           <div  class="w-full border-4 border-white rounded shadow-lg"
                 style="min-height: 163.8px; width: 308px; background: #fff;">
@@ -85,5 +85,12 @@ export default {
 <style lang="css" scoped>
   h3{
     font-size: 22px;
+  }
+
+  .scrollArea{
+    scroll-snap-type: x proximity;
+  }
+  .item{
+    scroll-snap-align: center;
   }
 </style>
