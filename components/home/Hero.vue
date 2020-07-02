@@ -1,17 +1,17 @@
 <template lang="html">
   <section class="flex items-stretch">
-    <div class="container mx-auto -mt-4 md:pb-16 flex flex-col-reverse justify-center items-center md:flex-row">
+    <div class="container mx-auto -mt-4 flex flex-col-reverse justify-center items-center md:flex-row">
       <div class="md:w-1/2">
         <h1 class="mt-4 md:mt-0 text-center mx-auto text-lg text-block-100 font-av" style="max-width: 444px;">
-          Produtos de alta qualidade, seguindo critérios técnicos e boas práticas de fabricação e montagem em todo o seu processo de produção.
+          {{ data.ctaText }}
         </h1>
         <footer class="flex flex-col-reverse md:flex-row items-center justify-center mt-8">
           <div class="btn btn-outline uppercase mt-4 md:mt-0 md:mr-4 transition duration-150 ease transform hover:scale-105"
               @click="abreTelefones()">
-            Fale conosco
+            {{ data.botaoFaleConosco }}
           </div>
-          <a href="#orcamentoorcamento" class="btn btn-white uppercase transition duration-150 ease transform hover:scale-105">
-            Solicite seu orçamento
+          <a href="#orcamento" class="btn btn-white uppercase transition duration-150 ease transform hover:scale-105">
+            {{ data.botaoOrcamento }}
           </a>
         </footer>
       </div>
@@ -44,6 +44,9 @@ export default {
     svgMascara,
     svgCapote
   },
+  props: [
+    'data'
+  ],
   methods: {
     abreTelefones: function () {
       console.log('1');

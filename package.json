@@ -15,8 +15,11 @@
     "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
     "animate.css": "^3.7.2",
-    "nuxt": "^2.0.0",
-    "v-mask": "^2.1.0"
+    "marked": "^1.1.0",
+    "node-fetch": "^2.6.0",
+    "nuxt": "2.13.0",
+    "v-mask": "^2.1.0",
+    "vue": "^2.6.11"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^1.0.0",

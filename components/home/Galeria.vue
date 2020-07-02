@@ -1,6 +1,6 @@
 <template lang="html">
-  <section class="mt-8 md:-mt-20 md:mb-8">
-    <div class="container md:mx-auto w-full">
+  <section class="mt-8">
+    <div class="container md:mx-auto w-full border-b-2 border-gray-400 pb-8">
       <div class="flex justify-between overflow-x-scroll md:overflow-x-hidden scrollArea">
         <div class="item ml-4 md:ml-0 mr-4 cursor-pointer"
               @click="abreVideo(1)">
