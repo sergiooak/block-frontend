@@ -39,7 +39,7 @@
       Telefones
     },
     async asyncData({ params, $axios, $config: { apiURL, apiToken } }) {
-      let API_URL = 'http://block.sergiooak.com.br'
+      let API_URL = 'https://block.sergiooak.com.br'
       let obj = { method: 'GET' }
       const home = await fetch(`${API_URL}/home`, obj).then(res => res.json())
 
